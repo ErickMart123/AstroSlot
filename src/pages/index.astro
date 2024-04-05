@@ -1,44 +1,11 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 
+let title= "Home";
 ---
+<BaseLayout title ={title}>
+<p>
+	Home- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda sunt laudantium expedita tempora magnam quod. Ea quasi quos non labore sunt nihil cupiditate corporis, molestiae soluta ipsam odio consequuntur. Ex.
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Slot</title>
-	</head>
-	<body>
-		<div id="container">
-			<header><h1>Header</h1></header>
-			<main><h1>Main</h1></main>
-			<footer>
-				<nav>Yahoo | Google | MSN</nav>
-			</footer>
-		</div>
-		<style>
-			body
-			{
-				background-color: antiquewhite;
-			}
-			#container
-			{
-				width: 90%;
-				max-width: 1200px;
-				max-width: tomato;
-				margin: auto;
-				margin-top: 50px;
-			}
-			header
-			{
-				min-height: 120px;
-				background-color: salmon;
-				padding: 1rem;
-			}
-			main{}
-			footer{}
-		</style>
-	</body>
-</html>
+</p>
+</BaseLayout>
