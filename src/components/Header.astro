@@ -1,6 +1,7 @@
 ---
-import Nav from "../components/Nav.astro";
+import HNav from "../components/HNav.astro";
+let {header} = Astro.props;
 ---
-<header><h1>Header</h1>
-<Nav />
+<header><h1>{header}</h1>
+<HNav />
 </header>
